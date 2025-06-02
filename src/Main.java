@@ -242,17 +242,4 @@ class Order {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
-    // toString
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", status='" + status + '\'' +
-                ", orderDate=" + orderDate +
-                ", deliveryDate=" + deliveryDate +
-                ", products=" + products +
-                ", customer=" + customer +
-                '}';
-    }
 }
