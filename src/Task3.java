@@ -150,7 +150,11 @@ class Producer implements Runnable {
                 });
             }
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            try {
+                Thread.sleep(12);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
         }
     }
 }
