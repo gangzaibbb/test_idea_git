@@ -151,7 +151,7 @@ class Producer implements Runnable {
             }
         } catch (InterruptedException e) {
             try {
-                Thread.sleep(12);
+                Thread.sleep(100);
             } catch (InterruptedException ex) {
                 throw new RuntimeException(ex);
             }
